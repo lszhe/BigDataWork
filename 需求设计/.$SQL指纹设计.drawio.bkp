@@ -1,0 +1,53 @@
+<mxfile host="Electron" modified="2023-04-28T13:50:37.624Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="wrbdGPKaWaaEGhAS8RML" version="21.1.2" type="device">
+  <diagram name="第 1 页" id="_-jHKvZz9BukLninsXsY">
+    <mxGraphModel dx="1304" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zURV9CsW6-6Lo7girFdd-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zURV9CsW6-6Lo7girFdd-1" target="zURV9CsW6-6Lo7girFdd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-1" value="GPUcontroller" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-2" value="sql指纹设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-6" value="&amp;nbsp;不存在" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zURV9CsW6-6Lo7girFdd-3" target="zURV9CsW6-6Lo7girFdd-5">
+          <mxGeometry x="0.6924" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="200" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zURV9CsW6-6Lo7girFdd-3" target="zURV9CsW6-6Lo7girFdd-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-11" value="存在" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zURV9CsW6-6Lo7girFdd-9">
+          <mxGeometry x="0.4097" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-3" value="SQL模板提取，根据模板读取缓存" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-5" value="CK解析语法树，构建指纹,将解析结果存入缓存" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-8" value="使用指纹的GPU判断结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zURV9CsW6-6Lo7girFdd-12" target="zURV9CsW6-6Lo7girFdd-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-12" value="发起请求，传入SQL语句" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zURV9CsW6-6Lo7girFdd-14" value="&lt;pre&gt;&lt;span style=&quot;color: rgba(0, 0, 255, 1)&quot;&gt;SELECT&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 1)&quot;&gt; b, a&#xa;&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 255, 1)&quot;&gt;FROM&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 1)&quot;&gt; c&#xa;&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 255, 1)&quot;&gt;WHERE&lt;/span&gt; a &lt;span style=&quot;color: rgba(128, 128, 128, 1)&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 1)&quot;&gt; ?&#xa;&lt;/span&gt;&lt;span style=&quot;color: rgba(128, 128, 128, 1)&quot;&gt;AND&lt;/span&gt; b &lt;span style=&quot;color: rgba(128, 128, 128, 1)&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 1)&quot;&gt; ?&#xa;&lt;/span&gt;&lt;span style=&quot;color: rgba(128, 128, 128, 1)&quot;&gt;AND&lt;/span&gt; a &lt;span style=&quot;color: rgba(128, 128, 128, 1)&quot;&gt;IN&lt;/span&gt; (?)&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="230" width="110" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
